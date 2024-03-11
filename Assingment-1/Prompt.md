@@ -85,7 +85,7 @@ void loop(){
 
 ## Circuit
  
-(/Screenshot 2024-03-11 191253.png)
+![1](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/64450307/b81864d6-5a54-4fb6-9dfb-b3adeb46a4c9)
 
 8 pins run from keypad to the Arduino
 
@@ -98,16 +98,21 @@ V0 contrast pin is connected to a potentiometer so the contrast on the screen ca
 LED pins are connected through pull up resistor to power and ground to control the backlight on the screen
 When a number is entered, it is displayed on the screen like so for 1 second:
  
+![3](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/64450307/f89cb346-987d-429c-adff-0d013aab3a77)
 
 Then the number is replaced by an asterisk to hide the entered password:
 
- 
+![2](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/64450307/ffa2f03e-d6ab-46ec-8f67-f214099cd6cb)
 
 When the 4 digit code matches the hard coded pre-set password, the green LED turns on:
- 
+
+![4](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/64450307/21e36f08-46bc-4f24-85cf-a18d1d74e61a)
 
 When the password is wrong, the red LED blinks and the screen is cleared for the next attempt:
  
- 
+![5](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/64450307/f7ef57d2-2e78-4558-aa8e-ce6f4fd8a365)
+
+![6](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/64450307/5986b49e-abdc-48a3-b9bd-42965f38b04a)
+
 
 
