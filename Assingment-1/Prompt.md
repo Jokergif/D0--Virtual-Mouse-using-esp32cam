@@ -7,6 +7,7 @@
 
 ## Code
 
+```
 #include <Keypad.h>
 #include <LiquidCrystal.h>
 const byte ROWS = 4; 
@@ -79,7 +80,7 @@ void loop(){
     }
   }
 }
-
+```
 
 
 ## Circuit
