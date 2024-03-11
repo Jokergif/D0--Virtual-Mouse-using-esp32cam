@@ -85,6 +85,7 @@ void loop(){
 
 ## Circuit
  
+(/Screenshot 2024-03-11 191253.png)
 
 8 pins run from keypad to the Arduino
 
