@@ -109,8 +109,11 @@ void loop(){
 ```
 -> At first, I installed the libraries named *Keypad.h* and *Liquidcrystal.h*.
 -> Then I rig up the circuit as shown in above diagram.
--> Further I declare the pin used in Arduino and ask for entering the password.
--> Then taking value I convert it into */** sign to hide it and continue asking till 4 numbers are added.
+-> Further I declare the pin used in Arduino, set a password and ask for entering the password.
+-> Then taking value I convert it into * sign to hide it and continue asking till 4 numbers are added.
+-> If the numbers will match the original password then it will show *Match found* and *Green* light will glow.
+-> If the numbers will not match the original password then it will show *Match not found* and *Red* light will glow and it will again ask user to enter the 
+   password.
 -> 
 ```
 
