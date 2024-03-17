@@ -85,7 +85,7 @@ void loop(){
 
 ## Circuit 
 
-![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/72903693-7210-4ed0-b7a3-f2c56c2ec29b
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/72903693-7210-4ed0-b7a3-f2c56c2ec29b)
 
 ### Typing wrong password
 
