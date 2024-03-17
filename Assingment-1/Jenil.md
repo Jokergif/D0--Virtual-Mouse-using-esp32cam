@@ -1,6 +1,4 @@
 
-https://www.tinkercad.com/things/kPW2MyriG1N-grand-jaagub-rottis/editel?sharecode=2EsThZhkfGMWn7Qe6fPD4Z4-Tv_e2QylLDLqxc4_iz8
-=======
 # Link for Simulation
 
 [Link](https://www.tinkercad.com/things/kPW2MyriG1N-password?sharecode=isHsHGCJsL94UDFf7Jpuiw_nKz36wDLnldbHWgZLjvE)
@@ -31,14 +29,15 @@ void setup(){
   Serial.begin(9600);
   pinMode(A0, OUTPUT);
   pinMode(A1, OUTPUT);
-  pinMode(11, OUTPUT);
   pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
 
   // Setting maximum size of lcd screen
   lcd.begin(16,2);
   lcd.print("Enter Password:");
 }
 void loop(){
+  
   // Condition below checks if the password has been entered correctly or not
   if(!matched){
     char customKey = customKeypad.getKey();
@@ -57,8 +56,7 @@ void loop(){
     else if (length == 4){
       if (enteredKey == password){
         // Prints Match to the LCD screen
-        lcd.setCursor(0,1);
-        lcd.print("Match!");
+        lcd.print("Match found");
         // matched is set as one so that keypad doesn’t keep asking for password once lock is opened
         matched = 1;
        // Setting green LED to ON state
@@ -67,8 +65,7 @@ void loop(){
       else {
         length = 0;
         // Prints No match to the LCD screen
-        lcd.setCursor(0,1);
-        lcd.print("No match!");
+        lcd.print("Match not found");
         // Blinks red LED to signify incorrect password and awaits next attempt
         digitalWrite(A1, HIGH);
         delay(1000);
@@ -88,6 +85,16 @@ void loop(){
 
 ## Circuit 
 
-![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/72903693-7210-4ed0-b7a3-f2c56c2ec29b)
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/72903693-7210-4ed0-b7a3-f2c56c2ec29b
+
+### Typing wrong password
+
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/f4510f22-1765-460e-8b08-8c47171f19d6)
+
+### Typing right password
+
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/85991f78-6eaa-455b-b5c6-a256b4794a13)
+
+
 
 
