@@ -5,134 +5,134 @@ https://www.tinkercad.com/things/3lxg5Kh8w4H-neat-hillar/editel?sharecode=hkNQmZ
 
 Code:
 
-#include <Keypad.h>
-#include <Adafruit_LiquidCrystal.h>
-
-
-
-Adafruit_LiquidCrystal lcd(0);
-
-const byte rows=4;
-const byte columns=4;
-
-byte row_pins[rows]={9,8,7,6};
-byte column_pins[columns]={5,4,3,2};
-
-char key_array[rows][columns]={
-{'1','2','3','A'},
-{'4','5','6','B'},
-{'7','8','9','C'},
-{'*','0','#','D'}
-};
-
-Keypad k= Keypad(makeKeymap(key_array),row_pins,column_pins,rows,columns);
-
-
-const int Actual_pin_size=4;
-const int Password_size=Actual_pin_size+1 ;
-char pass[Password_size]="12AB";
-char Entered_pin[Password_size];
-
-int red=12;
-int green=13;
-int i=0;
-
-
-int lock_status=1;
-
-
-void setup()
-{
- Serial.begin(9600);
- lcd.begin(16,2);
- 
- 
- pinMode(red, OUTPUT);
- pinMode(green, OUTPUT);
- digitalWrite(red,HIGH);
- digitalWrite(green,LOW);
-  
- lcd.setCursor(0,0);
- lcd.print("Door is locked.");
- delay(2000);
- lcd.clear();
-  
-  
-  
-  
-}
-
-void Unlock_activate()
-  {
-    lcd.setCursor(0,0);
-    lcd.print("Enter pin:");
+    #include <Keypad.h>
+    #include <Adafruit_LiquidCrystal.h>
     
-    char press = k.getKey();
-    if(press)
+    
+    
+    Adafruit_LiquidCrystal lcd(0);
+    
+    const byte rows=4;
+    const byte columns=4;
+    
+    byte row_pins[rows]={9,8,7,6};
+    byte column_pins[columns]={5,4,3,2};
+    
+    char key_array[rows][columns]={
+    {'1','2','3','A'},
+    {'4','5','6','B'},
+    {'7','8','9','C'},
+    {'*','0','#','D'}
+    };
+    
+    Keypad k= Keypad(makeKeymap(key_array),row_pins,column_pins,rows,columns);
+    
+    
+    const int Actual_pin_size=4;
+    const int Password_size=Actual_pin_size+1 ;
+    char pass[Password_size]="12AB";
+    char Entered_pin[Password_size];
+    
+    int red=12;
+    int green=13;
+    int i=0;
+    
+    
+    int lock_status=1;
+    
+    
+    void setup()
     {
-     Entered_pin[i]=press;
-      
-     lcd.setCursor(i,1);
-      lcd.print(press);
+     Serial.begin(9600);
+     lcd.begin(16,2);
      
-     i++;
-    
+     
+     pinMode(red, OUTPUT);
+     pinMode(green, OUTPUT);
+     digitalWrite(red,HIGH);
+     digitalWrite(green,LOW);
       
-     if(i==(Password_size-1))
-     {
-       delay(1000);
-       if(strcmp(Entered_pin,pass)==0)
-       {
-         digitalWrite(red,LOW);
-         digitalWrite(green,HIGH);
-         
-         lcd.clear();
-         lcd.setCursor(0,0);
-         lcd.print("Door Unlocked");
-         
-         i=0;
-         delay(2000);
-         lock_status=0;
-       }
-       
-       else
-       {
-         lcd.clear();
-         lcd.setCursor(0,0);
-         lcd.print("Wrong Pin");
-         delay(2200);
-         lcd.clear();
-         i=0;
-         lock_status=1;
-         
-       }
-       
-     }
+     lcd.setCursor(0,0);
+     lcd.print("Door is locked.");
+     delay(2000);
+     lcd.clear();
+      
+      
+      
+      
     }
+    
+    void Unlock_activate()
+      {
+        lcd.setCursor(0,0);
+        lcd.print("Enter pin:");
+        
+        char press = k.getKey();
+        if(press)
+        {
+         Entered_pin[i]=press;
+          
+         lcd.setCursor(i,1);
+          lcd.print(press);
+         
+         i++;
+        
+          
+         if(i==(Password_size-1))
+         {
+           delay(1000);
+           if(strcmp(Entered_pin,pass)==0)
+           {
+             digitalWrite(red,LOW);
+             digitalWrite(green,HIGH);
+             
+             lcd.clear();
+             lcd.setCursor(0,0);
+             lcd.print("Door Unlocked");
+             
+             i=0;
+             delay(2000);
+             lock_status=0;
+           }
+           
+           else
+           {
+             lcd.clear();
+             lcd.setCursor(0,0);
+             lcd.print("Wrong Pin");
+             delay(2200);
+             lcd.clear();
+             i=0;
+             lock_status=1;
+             
+           }
+           
+         }
+        }
+          
+        
+          
+       }
       
-    
       
-   }
-  
-  
-  
-  void Lock_activate()
-  {
-    digitalWrite(red,HIGH);
-    digitalWrite(green,LOW);
+      
+      void Lock_activate()
+      {
+        digitalWrite(red,HIGH);
+        digitalWrite(green,LOW);
+        
+        
+      } 
     
-    
-  } 
-
-void loop()
-{
-  if(lock_status==1)
-  {
-    Unlock_activate();
-  }
-  
-  
-} 
+    void loop()
+    {
+      if(lock_status==1)
+      {
+        Unlock_activate();
+      }
+      
+      
+    } 
 
 
 
