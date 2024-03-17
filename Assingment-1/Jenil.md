@@ -89,11 +89,13 @@ void loop(){
 
 ### Typing wrong password
 
-![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/f4510f22-1765-460e-8b08-8c47171f19d6)
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/6ed5ceb8-fed9-4ad8-91c7-a8d53188f6bb)
+
 
 ### Typing right password
 
-![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/85991f78-6eaa-455b-b5c6-a256b4794a13)
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/ad05bb67-a213-4fa6-939c-2d7e8a888cde)
+
 
 
 
