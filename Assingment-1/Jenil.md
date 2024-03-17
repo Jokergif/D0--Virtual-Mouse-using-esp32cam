@@ -81,22 +81,34 @@ void loop(){
 }
 ```
 
+
 ### Components Required
 
 ![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/e6d111e3-9494-4bef-b8d7-4f6aa869eadd)
+
+
 
 ## Circuit 
 
 ![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/72903693-7210-4ed0-b7a3-f2c56c2ec29b)
 
+
+
 ### Typing wrong password
 
-![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/6ed5ceb8-fed9-4ad8-91c7-a8d53188f6bb)
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/1e0f72df-9f28-4a33-ac1d-610bc6743165)
+
 
 
 ### Typing right password
 
 ![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/ad05bb67-a213-4fa6-939c-2d7e8a888cde)
+
+
+## Explanation
+
+-> At first, I install the libraries named *Keypad.h* and *LiLiquidcrystal.h*.
+-> 
 
 
 
