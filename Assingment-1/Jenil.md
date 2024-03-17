@@ -55,6 +55,7 @@ void loop(){
     }
     else if (length == 4){
       if (enteredKey == password){
+        lcd.clear();
         // Prints Match to the LCD screen
         lcd.print("Match found");
         // matched is set as one so that keypad doesn’t keep asking for password once lock is opened
@@ -64,6 +65,7 @@ void loop(){
       }
       else {
         length = 0;
+        lcd.clear();
         // Prints No match to the LCD screen
         lcd.print("Match not found");
         // Blinks red LED to signify incorrect password and awaits next attempt
