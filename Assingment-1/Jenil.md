@@ -1,6 +1,6 @@
 # Link for Simulation
 
-[Link]https://www.tinkercad.com/things/kPW2MyriG1N-grand-jaagub-rottis/editel?sharecode=2EsThZhkfGMWn7Qe6fPD4Z4-Tv_e2QylLDLqxc4_iz8
+[Link](https://www.tinkercad.com/things/kPW2MyriG1N-grand-jaagub-rottis/editel?sharecode=2EsThZhkfGMWn7Qe6fPD4Z4-Tv_e2QylLDLqxc4_iz8)
 
 ## Code
 ```
@@ -78,6 +78,11 @@ void loop(){
   }
 }
 ```
+
+### Components Required
+
+![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/e6d111e3-9494-4bef-b8d7-4f6aa869eadd)
+
 ## Circuit 
 
 ![image](https://github.com/Jokergif/D0--Virtual-Mouse-using-esp32cam/assets/161494158/72903693-7210-4ed0-b7a3-f2c56c2ec29b)
