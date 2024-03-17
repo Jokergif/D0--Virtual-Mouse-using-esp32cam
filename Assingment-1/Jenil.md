@@ -114,7 +114,8 @@ void loop(){
 -> If the numbers will match the original password then it will show *Match found* and *Green* light will glow.
 -> If the numbers will not match the original password then it will show *Match not found* and *Red* light will glow and it will again ask user to enter the 
    password.
--> 
+
+# *THANK YOU*
 ```
 
 
