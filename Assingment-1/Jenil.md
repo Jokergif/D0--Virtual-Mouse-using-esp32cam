@@ -107,7 +107,10 @@ void loop(){
 
 ## Explanation
 
--> At first, I install the libraries named *Keypad.h* and *LiLiquidcrystal.h*.
+-> At first, I installed the libraries named *Keypad.h* and *Liquidcrystal.h*.
+-> Then I rig up the circuit as shown in above diagram.
+-> Further I declare the pin used in Arduino and ask for entering the password.
+-> Then taking value I convert it into *** sign to hide it and continue asking till 4 numbers are added.
 -> 
 
 
