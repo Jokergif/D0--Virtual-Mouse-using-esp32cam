@@ -1,4 +1,4 @@
 name the folder under your name in this directory and upload code for each question separately
 1)Create a python file such that the user can input the x, y location and the mouse moves to that location. library to be used are autopy or pyautogui 
 2)Create a python file such that when you press a certain letter mouse is clicked automatically. use autopy/pyautogui and keyboard module
-3)Create a python file such that when a vowel is pressed you trigger the spacebar and the time between 2 vowels being pressed in printed on the screen. use modules time and keyboard
+3)Create a python file such that when a vowel is pressed you trigger the spacebar and the time between vowels being pressed in printed on the screen. use modules time and keyboard
